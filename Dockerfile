@@ -1,9 +1,6 @@
-FROM tomcat:9.0
-
 WORKDIR /usr/local/tomcat
 
-COPY target/CasaSegura.war /usr/local/tomcat/webapps/
+COPY webapps/CasaSegura.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 
-CMD ["catalina.sh", "run"]
